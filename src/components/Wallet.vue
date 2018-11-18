@@ -21,7 +21,11 @@
             <h3>Address</h3>
           </v-card-title>
           <v-card-text>{{ wallet.address }}</v-card-text>
-          <v-card flat><qriously v-model="qrJson" :size="qrSize" ></qriously></v-card>
+          <!-- TODO 
+          <v-card flat>
+            <qriously v-model="qrJson" :size="qrSize" />
+          </v-card>
+          -->
         </v-card>
         <v-card flat>
           <div v-for="(item, index) in validation" :key="index" class="errorLabel">
