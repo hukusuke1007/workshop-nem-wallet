@@ -1,4 +1,4 @@
-# NEM wallet
+# ワークショップ用 NEM wallet
 > NEM wallet repository for workshop.
 
 ## Description
