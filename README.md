@@ -21,7 +21,7 @@ yarn build
 
 ## 虫食いプログラミング
 ### TODO_1 起動コメント
-/src/App.vue<br>
+/src/Wallet.vue<br>
 mounted関数内でmessageに好きな言葉を実装
 
 ### TODO_2 タイトルを実装
