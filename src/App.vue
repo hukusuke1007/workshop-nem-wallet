@@ -1,7 +1,8 @@
 <template>
   <v-app>
     <header>
-      <span>{{ title }} </span>
+      <!--  TODO_2 タイトルを実装 -->
+      <!-- <span>{{ title }} </span> -->
     </header>
     <main>
       <Wallet/>
@@ -18,9 +19,8 @@ import Wallet from '@/components/Wallet.vue'
   },
 })
 export default class App extends Vue {
-  /* TODO Change title.*/
-  private title = ''
-  // private title = 'Self made NEM wallet'
+  /* TODO_2 タイトルを実装 */
+  // private title = ''
 }
 </script>
 <style lang="stylus">
@@ -40,7 +40,7 @@ main
   margin-bottom 40px
 
 /* 
-  TODO Change title color and background-color.
+  TODO_2 タイトルを実装
   http://www.coprosystem.co.jp/tipsblog/2013/08/01.html
 */
 header

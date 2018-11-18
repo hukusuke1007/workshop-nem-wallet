@@ -20,25 +20,26 @@ yarn build
 ```
 
 ## 虫食いプログラミング
-### 起動コメント
+### TODO_1 起動コメント
 /src/App.vue<br>
 mounted関数内でmessageに好きな言葉を実装
 
-### タイトルを実装
+### TODO_2 タイトルを実装
 /src/App.vue<br>
+htmlの部を作成。<br>
 titleの文言とheaderの色を実装
 
-### 送金先アドレスの表示
+### TODO_3 送金先アドレスの表示
 /src/Wallet.vue<br>
 htmlの部を作成。<br>
 getAccount関数内でwallet.getAccount()をコールする。
 
-### QRcode表示
+### TODO_4 QRcode表示
 /src/Wallet.vue<br>
 htmlの部を作成。<br>
 onValueChange関数内でNemUtil.getQRcodeJsonからqrJsonを取得する。
 
-### 送金の入力欄の実装
+### TODO_5 送金の実装
 /src/Wallet.vue<br>
 htmlの部を作成。
 
