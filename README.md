@@ -6,12 +6,12 @@
 
 ## 準備
 ターミナルを開いて進めてください。
-### 必要なライブラリをインストールします
+### 必要なライブラリをインストールする
 ```
 yarn
 ```
 
-### ローカル起動
+### ローカル起動で確認
 ```
 yarn serve
 ```
@@ -45,9 +45,8 @@ onValueChange関数内でNemUtil.getQRcodeJsonからqrJsonを取得する。
 /src/Wallet.vue<br>
 htmlの部を作成。
 
-### 実行
+### ローカル起動で確認
 ``` bash
-# serve with hot reload at localhost:8080
 yarn serve
 ```
 
