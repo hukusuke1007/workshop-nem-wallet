@@ -1,0 +1,35 @@
+{
+  "name": "nem-wallet",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "dotenv-webpack": "^1.5.7",
+    "encoding-japanese": "^1.0.29",
+    "localforage": "^1.7.2",
+    "nem-sdk": "^1.6.7",
+    "register-service-worker": "^1.0.0",
+    "vue": "^2.5.17",
+    "vue-class-component": "^6.0.0",
+    "vue-property-decorator": "^7.0.0",
+    "vue-qriously": "^1.1.1",
+    "vue-router": "^3.0.1",
+    "vue2-toast": "^2.0.2",
+    "vuetify": "^1.2.6",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.1",
+    "@vue/cli-plugin-pwa": "^3.0.1",
+    "@vue/cli-plugin-typescript": "^3.0.1",
+    "@vue/cli-service": "^3.0.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "typescript": "^3.0.0",
+    "vue-template-compiler": "^2.5.17"
+  }
+}
