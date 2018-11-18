@@ -10,18 +10,15 @@ Node.jsのサイトからインストーラーをダウンロードしてイン�
 [Node.js](https://nodejs.org/ja/)
 
 ### yarn のインストール
-ターミナル上で実行。
 ```
 npm install -g yarn
 ```
 ### Vue-CLI3のインストール
-ターミナル上で実行。
 ```
 npm install -g @vue/cli
 ```
 
 ## 準備
-ターミナルを開いて進めてください。
 ### 必要なライブラリをインストールする
 ```
 yarn
