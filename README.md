@@ -39,7 +39,7 @@ yarn build
 /src/Wallet.vue<br>
 mounted関数内でmessageに好きな言葉を実装
 
-### TODO_2 タイトルを実装
+### TODO_2 タイトル
 /src/App.vue<br>
 htmlの部を作成。<br>
 titleの文言とheaderの色を実装
@@ -49,7 +49,7 @@ titleの文言とheaderの色を実装
 htmlの部を作成。<br>
 getAccount関数内でwallet.getAccount()をコールする。
 
-### TODO_4 QRcode表示
+### TODO_4 QRコードの表示
 /src/Wallet.vue<br>
 htmlの部を作成。<br>
 onValueChange関数内でNemUtil.getQRcodeJsonからqrJsonを取得する。
