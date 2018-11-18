@@ -1,20 +1,21 @@
 # ワークショップ用 NEM wallet
 > NEM wallet repository for workshop.
 
-## Description
-This is a self made NEM wallet.
+## 説明
+ワークショップ用のNEM walletです。
 
-## Project setup
+## 準備
+### 以下のコマンドで必要なライブラリをインストールします。
 ```
 yarn
 ```
 
-### Compiles and hot-reloads for development
+### 起動
 ```
 yarn serve
 ```
 
-### Compiles and minifies for production
+### ビルド（ローカル起動させる場合はやらなくても良い）
 ```
 yarn build
 ```
