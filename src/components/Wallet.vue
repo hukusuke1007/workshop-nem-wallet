@@ -16,16 +16,18 @@
               @click="getAccount()"
               :loading="isLoading"><v-icon>cached</v-icon></v-btn>
           </v-card-actions>
-          <v-card-text>{{ wallet.balance }} xem</v-card-text>
+            <v-card-text>{{ wallet.balance }} xem</v-card-text>
           <v-card-title>
             <h3>Address</h3>
-          </v-card-title>
-          <v-card-text>{{ wallet.address }}</v-card-text>
-          <!-- TODO 
+          </v-card-title> 
+          <v-card-text>
+            <!-- TODO 送金先アドレスの表示 --> 
+            <!-- {{ wallet.address }} -->
+          </v-card-text>
           <v-card flat>
-            <qriously v-model="qrJson" :size="qrSize" />
+            <!-- TODO QRcode表示 -->
+            <!-- <qriously v-model="qrJson" :size="qrSize" /> -->
           </v-card>
-          -->
         </v-card>
         <v-card flat>
           <div v-for="(item, index) in validation" :key="index" class="errorLabel">
@@ -34,25 +36,25 @@
           <v-card-title>
             <h3>Send</h3>
           </v-card-title>
+          <!-- TODO 送金の入力欄の実装 -->
+          <!--
           <v-text-field
             label="To address"
             v-model="toAddr"
             :counter="40"
             required
-            placeholder="ex). NBHWRG6STRXL2FGLEEB2UOUCBAQ27OSGDTO44UFC"
-          ></v-text-field>
+            placeholder="ex). NBHWRG6STRXL2FGLEEB2UOUCBAQ27OSGDTO44UFC" />
           <v-text-field
             label="NEM"
             v-model="toAmount"
             type="number"
-            required
-          ></v-text-field>
-        <v-text-field
-          label="Message"
-          v-model="message"
-          :counter="1024"
-          placeholder="ex) Thank you."
-        ></v-text-field>
+            required />
+          <v-text-field
+            label="Message"
+            v-model="message"
+            :counter="1024"
+            placeholder="ex) Thank you." />
+          -->
         <v-flex>
           <v-btn
             color="blue"
@@ -106,16 +108,20 @@ export default class Wallet extends Vue {
 
   @Watch('wallet.address')
   private onValueChange(newValue: string, oldValue: string): void {
-    this.qrJson = NemUtil.getQRcodeJson(2, 2, 'nem-wallet', newValue, 0, '')
+    /* TODO QRcode表示 */
+    // this.qrJson = NemUtil.getQRcodeJson(2, 2, 'nem-wallet', newValue, 0, '')
   }
 
   private mounted() {
-    Vue.prototype.$toast('Hello self made NEM wallet')
+    /* TODO 起動コメント */
+    const message = 'message'
+    Vue.prototype.$toast(message)
   }
 
   private async getAccount() {
     this.isLoading = true
-    await this.wallet.getAccount()
+    /* TODO 送金先アドレスの表示 */
+    // await this.wallet.getAccount()
     this.isLoading = false
   }
 

@@ -1,5 +1,5 @@
 # NEM wallet
-> This is a self made NEM wallet.
+> NEM wallet repository for workshop.
 
 ## Description
 This is a self made NEM wallet.
@@ -19,30 +19,34 @@ yarn serve
 yarn build
 ```
 
-## Usage
-### Prepare .env
-Rename file to ".env" from "dotenvsample" and set node url and port in .env.
-``` 
-# mainnet:104, testnet:-104, mijin:96
-NEM_NET = 104
+## 虫食いプログラミング
+### 起動コメント
+/src/App.vue<br>
+mounted関数内でmessageに好きな言葉を実装
 
-# Node URL
-NEM_NODE_HOST = 'https://aqualife2.supernode.me'
-NEM_NODE_PORT = '7891'
-```
-This node is mainnet in NEM network.<br>
+### タイトルを実装
+/src/App.vue<br>
+titleの文言とheaderの色を実装
 
-If use testnet, you must set net/host/port for testnet.
+### 送金先アドレスの表示
+/src/Wallet.vue<br>
+htmlの部を作成。<br>
+getAccount関数内でwallet.getAccount()をコールする。
 
-### Run localhost.
-Please run the following command. Then run NEM wallet in localhost.
+### QRcode表示
+/src/Wallet.vue<br>
+htmlの部を作成。<br>
+onValueChange関数内でNemUtil.getQRcodeJsonからqrJsonを取得する。
+
+### 送金の入力欄の実装
+/src/Wallet.vue<br>
+htmlの部を作成。
+
+### 実行
 ``` bash
 # serve with hot reload at localhost:8080
 yarn serve
 ```
-
-### Prepare Test net.
-T.B.D.
 
 ## Author
 shohei<br>

@@ -18,7 +18,9 @@ import Wallet from '@/components/Wallet.vue'
   },
 })
 export default class App extends Vue {
-  private title = 'Self made NEM wallet'
+  /* TODO Change title.*/
+  private title = ''
+  // private title = 'Self made NEM wallet'
 }
 </script>
 <style lang="stylus">
@@ -37,12 +39,16 @@ main
   margin-top 40px
   margin-bottom 40px
 
+/* 
+  TODO Change title color and background-color.
+  http://www.coprosystem.co.jp/tipsblog/2013/08/01.html
+*/
 header
   margin 0
   height 56px
   padding 0 16px 0 24px
-  background-color #00c4b3
-  color #ffffff
+  // color #ffffff
+  // background-color #00c4b3
 
 header span
   display block

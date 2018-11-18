@@ -11,10 +11,10 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/nem-wallet/precache-manifest.44fe0f353bdac957c44eaf767482cd5f.js"
+  "/nem-wallet/precache-manifest.4d6434b30835f59f3d05b35854940263.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "nem-wallet"});
