@@ -70,7 +70,7 @@
           <v-card-title>
             <h3>Result</h3>
           </v-card-title>
-          {{ resultMessage }}
+          <p v-html="resultMessage"/>
         </v-flex>
         </v-card>
       </v-container>
@@ -129,14 +129,15 @@ export default class Wallet extends Vue {
   }
 
   private async tapSend() {
+    this.resultMessage = ''
     if (this.isValidation() === true) {
-      this.resultMessage = ''
       this.isLoading = true
       try {
         const result = await this.wallet.sendNem(this.toAddr, this.toAmount, this.message)
         const message = result.message + ': \n' + result.transactionHash.data
         if (result.message === 'SUCCESS') {
-          this.resultMessage = result.transactionHash.data
+          this.resultMessage = 'SUCCESS<br><br>TransactionHash<br>' + result.transactionHash.data
+          this.clear()
         } else {
           this.resultMessage = result.message
         }
@@ -158,6 +159,12 @@ export default class Wallet extends Vue {
     this.validation.push(this.rules.messageRules(this.message))
     const error: any[] = this.validation.filter((obj: any) => obj !== true )
     return (error.length === 0) ? true : false
+  }
+
+  private clear() {
+    this.toAmount = 0
+    this.toAddr = ''
+    this.message = ''
   }
 }
 </script>
